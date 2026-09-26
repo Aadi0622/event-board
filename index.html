@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Campus Event Board</title>
+    <meta name="description" content="Campus Event Board for IIIT Vadodara featuring upcoming technical, sports and cultural events with event registration information.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="Asset/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">Campus Event Board</p>
+            <h1>IIIT Vadodara</h1>
+            <h2>Events</h2>
+            <p class="hero-text">Discover technical, sports and cultural events happening on campus.</p>
+        </div>
+        <div class="hero-image">
+            <img src="Asset/header_background.png" alt="IIIT Vadodara campus event background">
+        </div>
+    </header>
+    <nav class="site-nav" aria-label="Main navigation">
+        <button class="nav-toggle" type="button" aria-label="Open navigation">☰</button>
+        <div class="nav-links">
+            <a href="#events" class="active">Events</a>
+            <a href="#registration">Registration</a>
+            <a href="#categories">Categories</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </nav>
+    <main id="main">
+        <div class="content-grid">
+            <section class="events" id="events">
+                <div class="section-heading">
+                    <p class="section-label">What's happening?</p>
+                    <h2>Upcoming Events</h2>
+                </div>
+                <div class="event-grid">
+                    <article class="event-card">
+                        <div class="card-number">01</div>
+                        <h3>Campus Hackathon</h3>
+                        <ul>
+                            <li><strong>Date:</strong> 10 October 2026</li>
+                            <li><strong>Time:</strong> 9:00 AM - 9:00 PM</li>
+                            <li><strong>Venue:</strong> Innovation Lab</li>
+                        </ul>
+                        <span class="event-category">Technical</span>
+                    </article>
+                    <article class="event-card">
+                        <div class="card-number">02</div>
+                        <h3>Tech Fest</h3>
+                        <ul>
+                            <li><strong>Date:</strong> 15 October 2026</li>
+                            <li><strong>Time:</strong> 10:00 AM - 5:00 PM</li>
+                            <li><strong>Venue:</strong> College Auditorium</li>
+                        </ul>
+                        <span class="event-category">Technical</span>
+                    </article>
+                    <article class="event-card">
+                        <div class="card-number">03</div>
+                        <h3>Coding Competition</h3>
+                        <ul>
+                            <li><strong>Date:</strong> 20 October 2026</li>
+                            <li><strong>Time:</strong> 11:00 AM - 2:00 PM</li>
+                            <li><strong>Venue:</strong> Computer Lab</li>
+                        </ul>
+                        <span class="event-category">Technical</span>
+                    </article>
+                    <article class="event-card">
+                        <div class="card-number">04</div>
+                        <h3>Sports Day</h3>
+                        <ul>
+                            <li><strong>Date:</strong> 25 October 2026</li>
+                            <li><strong>Time:</strong> 8:00 AM - 4:00 PM</li>
+                            <li><strong>Venue:</strong> College Ground</li>
+                        </ul>
+                        <span class="event-category">Sports</span>
+                    </article>
+                    <article class="event-card">
+                        <div class="card-number">05</div>
+                        <h3>Cultural Fest</h3>
+                        <ul>
+                            <li><strong>Date:</strong> 30 October 2026</li>
+                            <li><strong>Time:</strong> 5:00 PM - 9:00 PM</li>
+                            <li><strong>Venue:</strong> College Auditorium</li>
+                        </ul>
+                        <span class="event-category">Cultural</span>
+                    </article>
+                </div>
+            </section>
+            <aside class="sidebar">
+                <h2>Quick Information</h2>
+                <p>Press <kbd>Tab</kbd> to move through the links and form fields.</p>
+                <blockquote>Good communication and participation make campus events successful.</blockquote>
+                <p class="desktop-message">This message appears on wider screens.</p>
+            </aside>
+        </div>
+        <section id="categories" class="section-block">
+            <div class="section-heading">
+                <p class="section-label">Explore</p>
+                <h2>Category List</h2>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Event Name</th>
+                            <th>Category</th>
+                            <th>Meeting Day</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Campus Hackathon</td>
+                            <td>Technical</td>
+                            <td>Sunday</td>
+                        </tr>
+                        <tr>
+                            <td>Tech Fest</td>
+                            <td>Technical</td>
+                            <td>Wednesday</td>
+                        </tr>
+                        <tr>
+                            <td>Coding Competition</td>
+                            <td>Technical</td>
+                            <td>Saturday</td>
+                        </tr>
+                        <tr>
+                            <td>Sports Day</td>
+                            <td>Sports</td>
+                            <td>Thursday</td>
+                        </tr>
+                        <tr>
+                            <td>Cultural Fest</td>
+                            <td>Cultural</td>
+                            <td>Friday</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="registration" class="section-block">
+            <div class="section-heading">
+                <p class="section-label">Join us</p>
+                <h2>Event Registration</h2>
+            </div>
+            <p>Interested candidates can register for any upcoming event.</p>
+            <form>
+                <div class="form-group">
+                    <label for="candidate-name">Candidate Name:</label>
+                    <input type="text" id="candidate-name" name="candidate-name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="event">Select Event:</label>
+                    <select id="event" name="event" required>
+                        <option value="">-- Select an Event --</option>
+                        <option value="campus-hackathon">Campus Hackathon</option>
+                        <option value="tech-fest">Tech Fest</option>
+                        <option value="coding-competition">Coding Competition</option>
+                        <option value="sports-day">Sports Day</option>
+                        <option value="cultural-fest">Cultural Fest</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="information">Additional Information:</label>
+                    <textarea id="information" name="information" rows="5" placeholder="Enter any additional information"></textarea>
+                </div>
+                <button class="submit-button" type="submit">Register Now</button>
+            </form>
+        </section>
+        <section class="section-block faq">
+            <div class="section-heading">
+                <p class="section-label">Need help?</p>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <details>
+                <summary>Can I register for more than one event?</summary>
+                <p>Yes, you can register for multiple upcoming events.</p>
+            </details>
+            <details>
+                <summary>How can I contact the event team?</summary>
+                <p>You can use the contact information provided below.</p>
+            </details>
+        </section>
+        <section id="contact" class="section-block">
+            <div class="section-heading">
+                <p class="section-label">Get in touch</p>
+                <h2>Contact Us</h2>
+            </div>
+            <p>For event registration and general queries, contact us.</p>
+            <div class="table-wrapper">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Name</th>
+                            <td>Aditya Kumar</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td><a href="mailto:Adityakumar6655829@gmail.com">Adityakumar6655829@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <th>Phone</th>
+                            <td><a href="tel:+919876543210">+91 9876543210</a></td>
+                        </tr>
+                        <tr>
+                            <th>Organization</th>
+                            <td>IIIT Vadodara</td>
+                        </tr>
+                        <tr>
+                            <th>Purpose</th>
+                            <td>Event Registration and Queries</td>
+                        </tr>
+                        <tr>
+                            <th>Website</th>
+                            <td><a href="https://iiitvadodara.ac.in/" target="_blank" rel="noopener">IIIT Vadodara Website</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="section-block">
+            <div class="section-heading">
+                <p class="section-label">CSS Lab Notes</p>
+                <h2>Box Model Demonstration</h2>
+            </div>
+            <div class="box-demo">This box demonstrates the CSS box model.</div>
+        </section>
+    </main>
+    <footer>
+        <p><b>Disclaimer:</b> This website is created for the 2026 event.</p>
+        <p><b>Team Leader:</b> Aditya Kumar Sharma</p>
+        <p><b>Team Members:</b> Sujit Kumar, Aditi Choudhary, Sonam Raj, Guru Prasad Panda</p>
+        <p>© 2026 IIIT Vadodara Event</p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="#events">Events</a>
+            <a href="#registration">Registration</a>
+            <a href="#categories">Categories</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <address>
+            Contact: <a href="mailto:Adityakumar6655829@gmail.com">Adityakumar6655829@gmail.com</a><br>
+            Phone: <a href="tel:+919876543210">+91 9876543210</a><br>
+            IIIT Vadodara
+        </address>
+    </footer>
+</body>
+</html>
