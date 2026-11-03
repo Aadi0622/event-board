@@ -23,8 +23,8 @@
             <img src="Asset/header_background.png" alt="IIIT Vadodara campus event background">
         </div>
     </header>
-    <nav class="site-nav" aria-label="Main navigation">
-        <button class="nav-toggle" type="button" aria-label="Open navigation">☰</button>
+  <nav class="site-nav" aria-label="Main navigation">
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
         <div class="nav-links">
             <a href="#events" class="active">Events</a>
             <a href="#registration">Registration</a>
@@ -39,59 +39,14 @@
                     <p class="section-label">What's happening?</p>
                     <h2>Upcoming Events</h2>
                 </div>
-                <div class="event-grid">
-                    <article class="event-card">
-                        <div class="card-number">01</div>
-                        <h3>Campus Hackathon</h3>
-                        <ul>
-                            <li><strong>Date:</strong> 10 October 2026</li>
-                            <li><strong>Time:</strong> 9:00 AM - 9:00 PM</li>
-                            <li><strong>Venue:</strong> Innovation Lab</li>
-                        </ul>
-                        <span class="event-category">Technical</span>
-                    </article>
-                    <article class="event-card">
-                        <div class="card-number">02</div>
-                        <h3>Tech Fest</h3>
-                        <ul>
-                            <li><strong>Date:</strong> 15 October 2026</li>
-                            <li><strong>Time:</strong> 10:00 AM - 5:00 PM</li>
-                            <li><strong>Venue:</strong> College Auditorium</li>
-                        </ul>
-                        <span class="event-category">Technical</span>
-                    </article>
-                    <article class="event-card">
-                        <div class="card-number">03</div>
-                        <h3>Coding Competition</h3>
-                        <ul>
-                            <li><strong>Date:</strong> 20 October 2026</li>
-                            <li><strong>Time:</strong> 11:00 AM - 2:00 PM</li>
-                            <li><strong>Venue:</strong> Computer Lab</li>
-                        </ul>
-                        <span class="event-category">Technical</span>
-                    </article>
-                    <article class="event-card">
-                        <div class="card-number">04</div>
-                        <h3>Sports Day</h3>
-                        <ul>
-                            <li><strong>Date:</strong> 25 October 2026</li>
-                            <li><strong>Time:</strong> 8:00 AM - 4:00 PM</li>
-                            <li><strong>Venue:</strong> College Ground</li>
-                        </ul>
-                        <span class="event-category">Sports</span>
-                    </article>
-                    <article class="event-card">
-                        <div class="card-number">05</div>
-                        <h3>Cultural Fest</h3>
-                        <ul>
-                            <li><strong>Date:</strong> 30 October 2026</li>
-                            <li><strong>Time:</strong> 5:00 PM - 9:00 PM</li>
-                            <li><strong>Venue:</strong> College Auditorium</li>
-                        </ul>
-                        <span class="event-category">Cultural</span>
-                    </article>
+                 <div class=""search-box">
+                   <label for="event-search">Search Events:</label>
+                    <input type ="search" id="event-search" placeholder="Search by event name or category...">
+                     <p id="search-message"></p>
                 </div>
-            </section>
+                <p id="fetch-status" aria-live="polite">Loading events....</p>
+                <div class ="event-grid" id="event-grid">
+                </div>
             <aside class="sidebar">
                 <h2>Quick Information</h2>
                 <p>Press <kbd>Tab</kbd> to move through the links and form fields.</p>
@@ -149,10 +104,10 @@
                 <h2>Event Registration</h2>
             </div>
             <p>Interested candidates can register for any upcoming event.</p>
-            <form>
+            <form id="registration-form">
                 <div class="form-group">
                     <label for="candidate-name">Candidate Name:</label>
-                    <input type="text" id="candidate-name" name="candidate-name" placeholder="Enter your name" required>
+                    <input type="text" id="candidate-name" name="candidate-name" placeholder="Enter your name" minlength="2" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
@@ -160,7 +115,7 @@
                 </div>
                 <div class="form-group">
                     <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" title="Enter a 10-digit phone number" required>
                 </div>
                 <div class="form-group">
                     <label for="event">Select Event:</label>
@@ -178,6 +133,7 @@
                     <textarea id="information" name="information" rows="5" placeholder="Enter any additional information"></textarea>
                 </div>
                 <button class="submit-button" type="submit">Register Now</button>
+            <p id="form-message" aria-live="polite"></p>
             </form>
         </section>
         <section class="section-block faq">
@@ -209,11 +165,11 @@
                         </tr>
                         <tr>
                             <th>Email</th>
-                            <td><a href="mailto:Adityakumar6655829@gmail.com">Adityakumar6655829@gmail.com</a></td>
+                            <td><a href="mailto:Adityakumar6655829@gmail.com"> Adityakumar6655829@gmail.com </a></td>
                         </tr>
                         <tr>
                             <th>Phone</th>
-                            <td><a href="tel:+919876543210">+91 9876543210</a></td>
+                            <td><a href="tel:+919876543210"> +91 9876543210 </a></td>
                         </tr>
                         <tr>
                             <th>Organization</th>
@@ -225,7 +181,7 @@
                         </tr>
                         <tr>
                             <th>Website</th>
-                            <td><a href="https://iiitvadodara.ac.in/" target="_blank" rel="noopener">IIIT Vadodara Website</a></td>
+                            <td><a href="https://iiitvadodara.ac.in/" target="_blank" rel="noopener"> IIIT Vadodara Website </a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -236,7 +192,9 @@
                 <p class="section-label">CSS Lab Notes</p>
                 <h2>Box Model Demonstration</h2>
             </div>
-            <div class="box-demo">This box demonstrates the CSS box model.</div>
+            <div class="box-demo">
+                This box demonstrates the CSS box model.
+            </div>
         </section>
     </main>
     <footer>
@@ -250,11 +208,8 @@
             <a href="#categories">Categories</a>
             <a href="#contact">Contact Us</a>
         </nav>
-        <address>
-            Contact: <a href="mailto:Adityakumar6655829@gmail.com">Adityakumar6655829@gmail.com</a><br>
-            Phone: <a href="tel:+919876543210">+91 9876543210</a><br>
-            IIIT Vadodara
-        </address>
+        <address>Contact: <a href="mailto:Adityakumar6655829@gmail.com"> Adityakumar6655829@gmail.com </a> <br> Phone: <a href="tel:+919876543210"> +91 9876543210 </a> <br> IIIT Vadodara</address>
     </footer>
+<script src="script.js" defer></script>
 </body>
 </html>

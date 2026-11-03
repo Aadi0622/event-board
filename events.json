@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Campus Hackathon",
+        "date": "10 October 2026",
+        "time": "9:00 AM - 9:00 PM",
+        "venue": "Innovation Lab",
+        "category": "Technical",
+        "seats": 50,
+        "online":true
+    },
+    {
+        "id": 2,
+        "title":"Tech Fest",
+        "date":"15 October 2026",
+        "time": "10:00 AM- 5:00 PM",
+        "venue": "College Auditorium",
+        "category": "Technical",
+        "seats": 100,
+        "online": true
+    },
+    {
+        "id": 3,
+        "title": "Coding Competition",
+        "venue": "20 October 2026",
+        "category": "Technical",
+        "seats": 30,
+        "online":false
+    },
+    {
+        "id":4,
+        "title": "Sports Day",
+        "date": "25 October 2026",
+        "time": "8:00 AM- 4:00 PM",
+        "venue": "College Ground",
+        "Category": "Sports",
+        "seats": 80,
+       "online" : false
+    },
+    {
+        "id" :5,
+        "title":"Cultural Fest",
+        "date": "30 October 2026",
+        "time": "5:00 PM - 9:00 PM",
+        "venue": "College Auditorium",
+        "category":"Cultural",
+        "seats": 120,
+        "online" : false
+    }
+]

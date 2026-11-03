@@ -4,15 +4,9 @@
     --ink: #202124;
     --paper: #f7f8fc;
     --white: #ffffff;
-    --muted: #666666;
     --border: #d9dce5;
     --radius: 0.75rem;
     --shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
-    --space-1: 0.5rem;
-    --space-2: 1rem;
-    --space-3: 1.5rem;
-    --space-4: 2rem;
-    --space-5: 3rem;
 }
 
 *,
@@ -34,7 +28,11 @@ body {
     line-height: 1.5;
     font-size: 1rem;
     display: grid;
-    grid-template-areas: "header" "nav" "main" "footer";
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
     min-height: 100vh;
 }
 
@@ -76,7 +74,7 @@ main {
     grid-area: main;
     width: min(90%, 60rem);
     margin: 0 auto;
-    padding: 2rem 0 4rem 0;
+    padding: 2rem 0 4rem;
 }
 
 .header {
@@ -120,7 +118,6 @@ main {
 }
 
 .hero-image img {
-    max-width: 100%;
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -435,14 +432,6 @@ address {
         align-items: start;
     }
 
-    .nav-links {
-        display: flex;
-    }
-
-    .nav-toggle {
-        display: none;
-    }
-
     .event-grid {
         grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     }
@@ -472,13 +461,72 @@ img {
         height: 18rem;
     }
 }
-#contact a {
-    text-decoration: none;
-    color: var(--accent);
+
+.nav-links.is-open {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.search-box {
+    margin: 1.5rem 0;
+    padding: 1.25rem;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+.search-box label {
+    font-weight: 600;
+}
+
+#event-search {
+    margin-top: 0.5rem;
+}
+
+.search-result {
+    color: var(--brand);
+    font-weight: 600;
+    margin-top: 0.75rem;
+}
+
+#fetch-status {
+    font-weight: 600;
+    color: var(--brand);
+}
+
+.rsvp-button {
+    margin-top: 1rem;
+    padding: 0.65rem 1.2rem;
+    border: none;
+    border-radius: 0.4rem;
+    background: var(--accent);
+    color: white;
+    font: inherit;
+    font-weight: 600;
     cursor: pointer;
 }
 
-#contact a:hover {
-    text-decoration: underline;
-    color:blue;
+.rsvp-button:hover {
+    background: hsl(24, 95%, 40%);
+}
+
+.seat-status {
+    font-weight: 600;
+    color: var(--brand);
+}
+
+.success-message {
+    color: green;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: #d93025;
+}
+
+input:valid:not(:placeholder-shown) {
+    border-color: #188038;
 }
