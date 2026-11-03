@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+    <event id="1">
+        <title>Campus Hackathon</title>
+        <date>2026-10-10</date>
+        <time>9:00 AM - 9:00 PM</time>
+        <venue>Innovation Lab</venue>
+        <category>Technical</category>
+        <seats>50</seats>
+        <free>true</free>
+        <online>true</online>
+    </event>
+    <event id="2">
+        <title>Tech Fest</title>
+        <date>2026-10-15</date>
+        <time>10:00 AM - 5:00 PM</time>
+        <venue>College Auditorium</venue>
+        <category>Technical</category>
+        <seats>100</seats>
+        <free>true</free>
+        <online>true</online>
+    </event>
+    <event id="3">
+        <title>Coding Competition</title>
+        <date>2026-10-20</date>
+        <time>11:00 AM - 4:00 PM</time>
+        <venue>Computer Lab</venue>
+        <category>Technical</category>
+        <seats>30</seats>
+        <free>false</free>
+        <online>false</online>
+    </event>
+    <event id="4">
+        <title>Sports Day</title>
+        <date>2026-10-25</date>
+        <time>8:00 AM - 4:00 PM</time>
+        <venue>College Ground</venue>
+        <category>Sports</category>
+        <seats>80</seats>
+        <free>true</free>
+        <online>false</online>
+    </event>
+    <event id="5">
+        <title>Cultural Fest</title>
+        <date>2026-10-30</date>
+        <time>5:00 PM - 9:00 PM</time>
+        <venue>Auditorium</venue>
+        <category>Cultural</category>
+        <seats>120</seats>
+        <free>false</free>
+        <online>false</online>
+    </event>
+</events>
